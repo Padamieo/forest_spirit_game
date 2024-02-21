@@ -1,0 +1,20 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.enable": true,
+  "prettier.requireConfig": true,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "jest.coverageColors": {
+    "uncovered": "rgba(255,100,71, 0.4)",
+    "partially-covered": "rgba(255,255,71, 0.2)"
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#417961",
+    "titleBar.inactiveBackground": "#1a3022"
+  }
+}

@@ -1,0 +1,1 @@
+export { isTranslationAvailable } from './isTranslationAvailable';
