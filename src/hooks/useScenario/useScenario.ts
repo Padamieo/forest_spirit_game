@@ -117,13 +117,21 @@ export const useScenario = (isInitialised: boolean, app?: Application, viewport?
         // const x = app.renderer.generateTexture(viewport);
         // console.log(x);
         // const a = app.renderer.extract.canvas(app.stage); // viewport app.stage triangle
-        const a = await app.renderer.extract.image(triangle);
+        
+        const imageThis = app.renderer.generateTexture(viewport, {
+          region: app.screen,
+          resolution: 1,
+        });
+
+        const a = app.renderer.extract.canvas(
+          imageThis
+        );
+        imageThis.destroy();
+
         console.log(a, event);
         const canvas = a.getContext("2d");
 
-        // canvas.add
-
-        document.body.appendChild(a);
+        // document.body.appendChild(a);
 
         if (!canvas) {
           return;
